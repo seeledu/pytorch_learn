@@ -28,7 +28,7 @@ import math
 
 # 检验能否用gpu,不行的话设定为cpu模式.
 USE_CUDA = torch.cuda.is_available()
-# print(USE_CUDA)
+print(USE_CUDA)
 device = torch.device("cuda" if USE_CUDA else "cpu")
 
 # 下载语料
